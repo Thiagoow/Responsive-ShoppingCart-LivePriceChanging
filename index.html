@@ -9,13 +9,13 @@
     <link rel="stylesheet" href="assets/css/styles.css" />
     <!--========== Title ==========-->
     <title>Carrinho</title>
-
     <!--==================== Unicons Library ====================-->
     <link
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
     />
   </head>
+
   <body>
     <main class="container">
       <h1 class="heading">
@@ -33,7 +33,31 @@
                 <span>Cartão de Crédito</span>
                 <i class="uil-check-circle"></i>
               </button>
+
+              <button class="method">
+                <i class="uil-paypal"></i>
+                <span>PayPal</span>
+                <i class="uil-check"></i>
+              </button>
             </div>
+
+            <form action="#">
+              <div class="cardholder-name">
+                <label for="cardholder-name" class="label-default">
+                  Nome no cartão
+                </label>
+                <input type="text" id="cardholder-name" class="input-default" />
+              </div>
+
+              <div class="card-number">
+                <label for="card-number" class="label-default">
+                  Número do cartão
+                </label>
+                <input type="text" id="card-number" class="input-default" />
+              </div>
+
+              <div class="input-flex"></div>
+            </form>
           </div>
         </section>
       </div>
