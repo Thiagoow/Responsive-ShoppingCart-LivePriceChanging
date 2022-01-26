@@ -1,0 +1,62 @@
+/*===== GOOGLE FONTS =====*/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
+
+/*===== VARIABLES CSS =====*/
+:root {
+  /*========== Colors ==========*/
+  --title-color: ;
+  --text-color: ;
+  --text-color-light: ;
+  --body-color: ;
+  --shadow-color: ;
+  --border-color: ;
+  --container-color: ;
+
+  /*========== Font and Typography ==========*/
+  --body-font: "Open Sans", sans-serif;
+
+  /*========== Border Radius ===========*/
+  --border-outside-radius: 15px;
+  --border-inside-radius: 20px;
+}
+
+/*========== BASE ==========*/
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: var(--body-font);
+  background: var(--body-color);
+  color: var(--text-color);
+}
+
+/*========== CSS Reset ==========*/
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+}
+ul {
+  padding: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*========== CLASS CSS ==========*/
