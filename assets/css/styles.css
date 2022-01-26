@@ -53,6 +53,7 @@
   box-sizing: border-box;
 }
 html {
+  font-family: var(--body-font);
   scroll-behavior: smooth;
 }
 body {
@@ -60,7 +61,6 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  font-family: var(--body-font);
   background: var(--body-color);
   color: var(--text-color);
 }
