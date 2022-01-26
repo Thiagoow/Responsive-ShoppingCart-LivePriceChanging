@@ -56,8 +56,123 @@
                 <input type="text" id="card-number" class="input-default" />
               </div>
 
-              <div class="input-flex"></div>
+              <div class="input-flex">
+                <div class="expire-date">
+                  <label for="expire-date" class="label-default">
+                    Válido até
+                  </label>
+
+                  <div class="input-flex">
+                    <input
+                      type="number"
+                      name="day"
+                      id="expire-date"
+                      placeholder="31"
+                      min="1"
+                      max="31"
+                      class="input-default"
+                    />
+
+                    <input
+                      type="number"
+                      name="month"
+                      id="expire-date"
+                      placeholder="12"
+                      min="1"
+                      max="12"
+                      class="input-default"
+                    />
+                  </div>
+                </div>
+
+                <div class="cvv">
+                  <label for="cvv" class="label-default"> CVV </label>
+                  <input type="text" id="cvv" class="input-default" />
+                </div>
+              </div>
             </form>
+          </div>
+
+          <button class="btn btn-primary">
+            <b>Pagar</b> R$ <span id="payAmount">20,50</span>
+          </button>
+        </section>
+
+        <section class="cart">
+          <div class="cart-item-box">
+            <h2 class="section-heading">Seus itens</h2>
+
+            <div class="product-card">
+              <div class="card">
+                <div class="img-box">
+                  <img
+                    src="assets/img/carrots.png"
+                    width="80px"
+                    alt="Carrots"
+                  />
+                </div>
+
+                <div class="detail">
+                  <h4 class="product-name">0,5kg Cenouras Frescas</h4>
+
+                  <div class="wrapper">
+                    <div class="product-qty">
+                      <button id="decrement">
+                        <i class="uil-minus-circle"></i>
+                      </button>
+
+                      <span id="quantity">1</span>
+
+                      <button id="increment">
+                        <i class="uil-plus-circle"></i>
+                      </button>
+                    </div>
+
+                    <div class="price">R$ <span id="price">5,50</span></div>
+                  </div>
+                </div>
+
+                <button id="product-close-btn">
+                  <i class="uil-x"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="card">
+                <div class="img-box">
+                  <img
+                    src="assets/img/lettuce.png"
+                    width="80px"
+                    alt="Carrots"
+                  />
+                </div>
+
+                <div class="detail">
+                  <h4 class="product-name">0,2kg Alface Fresca</h4>
+
+                  <div class="wrapper">
+                    <div class="product-qty">
+                      <button id="decrement">
+                        <i class="uil-minus-circle"></i>
+                      </button>
+
+                      <span id="quantity">1</span>
+
+                      <button id="increment">
+                        <i class="uil-plus-circle"></i>
+                      </button>
+                    </div>
+
+                    <div class="price">R$ <span id="price">6,40</span></div>
+                  </div>
+                </div>
+
+                <button id="product-close-btn">
+                  <i class="uil-x"></i>
+                </button>
+              </div>
+            </div>
           </div>
         </section>
       </div>
