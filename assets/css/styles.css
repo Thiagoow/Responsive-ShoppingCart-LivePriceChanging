@@ -31,6 +31,8 @@
   /*========== Font Weight ==========*/
   --font-medium: 500;
   --font-semi-bold: 600;
+  --font-bold: 700;
+  --font-bolder: 800;
 
   /*========== Margins ==========*/
   /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
@@ -251,6 +253,9 @@ input:focus {
 /*========== CART ==========*/
 .cart {
   width: 42%;
+  /* TODO:
+  Change width on media queries
+  */
   display: flex;
   flex-direction: column;
 }
@@ -263,7 +268,10 @@ input:focus {
   position: relative;
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  /* Products gap: */
+  margin-bottom: var(--mb-3);
+  /* Product picture and details gap: */
+  gap: 1.2rem;
 }
 .card .product-img {
   border-radius: var(--border-inside-radius);
@@ -315,15 +323,17 @@ input:focus {
   gap: 1.2rem;
 }
 .wrapper-flex input {
-  background: #fff;
   margin-top: var(--mb-1);
+  background: #fff;
   padding: 0.5rem 0.5rem;
   font-weight: var(--font-semi-bold);
   letter-spacing: 2px;
 }
 
 .btn-outline {
-  padding: 0.6rem 0.6rem;
+  margin-top: var(--mb-1);
+  border: 1px solid var(--secondary-color);
+  padding: 0.6rem 0.8rem;
 }
 .btn-outline:hover {
   color: #fff;
@@ -336,4 +346,10 @@ input:focus {
 /* Subtotal / discount / shipping / total -> gap: */
 .amount > div:not(:last-child) {
   margin-bottom: 1.2rem;
+}
+.amount .total {
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-bold);
+  color: var(--secondary-color);
+  text-align: end;
 }
