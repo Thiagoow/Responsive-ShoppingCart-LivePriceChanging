@@ -31,7 +31,7 @@
               <button class="method selected">
                 <i class="uil-card-atm"></i>
                 <span>Cartão de Crédito</span>
-                <i class="uil-check-circle"></i>
+                <i class="uil-check-circle checkmark"></i>
               </button>
 
               <button class="method">
@@ -171,6 +171,59 @@
                 <button id="product-close-btn">
                   <i class="uil-x"></i>
                 </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="wrapper">
+            <div class="discount-token">
+              <label for="token" class="label-default">
+                Cupom de presente/desconto
+              </label>
+
+              <div class="wrapper-flex">
+                <input
+                  type="text"
+                  name="discount-token"
+                  id="discount-token"
+                  class="input-default"
+                />
+
+                <button class="btn btn-outline">Aplicar</button>
+              </div>
+            </div>
+
+            <div class="amount">
+              <div class="subtotal">
+                <span>SubTotal</span>
+                <span>
+                  R$
+                  <span id="subtotal">2,50</span>
+                </span>
+              </div>
+
+              <div class="tax">
+                <span>Desconto</span>
+                <span>
+                  R$
+                  <span id="tax">00,00</span>
+                </span>
+              </div>
+
+              <div class="shipping">
+                <span>Frete</span>
+                <span>
+                  R$
+                  <span id="shipping">13,00</span>
+                </span>
+              </div>
+
+              <div class="total">
+                <span>Total</span>
+                <span>
+                  R$
+                  <span id="total">2,50</span>
+                </span>
               </div>
             </div>
           </div>
