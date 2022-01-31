@@ -10,4 +10,4 @@ tendo como base o <a href="https://www.youtube.com/watch?v=-gEV3znqu8E" target="
 do canal do Youtube: <a href="https://www.youtube.com/channel/UC1PZHWV6VvICTL1LgFUZq6g" target="_blank">
 codewithsadee</a></p>
 
-## Demo:
+## Demo: https://carrinho-js.netlify.app/
