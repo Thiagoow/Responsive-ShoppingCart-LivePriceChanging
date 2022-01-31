@@ -254,9 +254,6 @@ input:focus {
 /*========== CART ==========*/
 .cart {
   width: 42%;
-  /* TODO:
-  Change width on media queries
-  */
   display: flex;
   flex-direction: column;
 }
