@@ -11,8 +11,9 @@
   --title-color: #000000;
   --text-color: #313131;
   --text-color-light: #474747;
-  --body-color: #f1f1f1;
+  --body-color: #fcfcfc;
   --container-color: #ffffff;
+  --input-color: #f1f1f1;
   --shadow-color: rgba(0, 0, 0, 0.2);
   --border-color: #cfcfcf;
 
@@ -184,7 +185,7 @@ input:focus {
 }
 .input-default {
   margin-top: var(--mb-1);
-  background: var(--body-color);
+  background: var(--input-color);
   border-radius: var(--border-outside-radius);
   color: var(--text-color);
 }
@@ -267,7 +268,7 @@ input:focus {
 .product-card .card {
   position: relative;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   /* Products gap: */
   margin-bottom: var(--mb-3);
   /* Product picture and details gap: */
@@ -324,7 +325,7 @@ input:focus {
 }
 .wrapper-flex input {
   margin-top: var(--mb-1);
-  background: #fff;
+  background: var(--input-color);
   padding: 0.5rem 0.5rem;
   font-weight: var(--font-semi-bold);
   letter-spacing: 2px;
@@ -352,4 +353,77 @@ input:focus {
   font-weight: var(--font-bold);
   color: var(--secondary-color);
   text-align: end;
+}
+
+@media (max-width: 1026px) {
+  .item-flex {
+    /* Reverse because the client itens 
+    always have to appear before the payment details */
+    flex-direction: column-reverse;
+  }
+
+  .checkout {
+    width: 100%;
+    border-right: none;
+  }
+  .btn-primary {
+    width: 100%;
+  }
+
+  .cart {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    border-bottom: 1px solid var(--border-color);
+  }
+  .cart .wrapper {
+    margin-top: auto;
+  }
+  .cart .cart-item-box {
+    border-right: 1px solid var(--border-color);
+    margin-bottom: 0;
+  }
+
+  .discount-token {
+    border-top: none;
+  }
+}
+@media (max-width: 768px) {
+  .heading {
+    padding: var(--mb-2) 3rem;
+  }
+
+  .cart {
+    grid-template-columns: 1fr;
+  }
+
+  .discount-token {
+    border-top: 1px solid var(--border-color);
+  }
+
+  .wrapper-flex {
+    gap: 1rem;
+  }
+}
+@media (max-width: 600px) {
+  /* Make payment methods one
+  under another */
+  .payment-method {
+    flex-direction: column;
+  }
+  .payment-method .method {
+    width: 100%;
+  }
+  .expire-date .input-flex {
+    flex-direction: row;
+  }
+  .input-flex .expire-date,
+  .cvv {
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  .input-flex {
+    flex-direction: column;
+  }
 }
