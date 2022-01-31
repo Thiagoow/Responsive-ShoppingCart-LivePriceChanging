@@ -12,8 +12,6 @@ const subTotalElem = document.querySelector("#subtotal");
 const discountElem = document.querySelector("#discount");
 const totalElem = document.querySelector("#total");
 
-console.log(discountElem.textContent);
-
 //loop: for add event on multiple "increment" & "decrement" btn:
 for (let i = 0; i < incrementBtn.length; i++) {
   incrementBtn[i].addEventListener("click", function () {
